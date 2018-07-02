@@ -1,0 +1,112 @@
+@import "../../sass/rem.scss";
+
+.input-block {
+  padding: px2rem(16) 0 px2rem(19.6) px2rem(20);
+
+  &.search-input-block {
+    display: inline-block;
+    padding: px2rem(16) 0 px2rem(16) px2rem(12);
+  }
+
+  label {
+    height: px2rem(25);
+    line-height: px2rem(25);
+    font-size: px2rem(18);
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .input-control {
+    border-bottom: 0.5px solid #cccccc;
+    width: px2rem(335);
+    display: inline-block;
+
+    input {
+      background-color: transparent;
+      border-radius: 0;
+      padding: px2rem(15) 0 px2rem(10);
+      width: px2rem(300);
+      -o-text-overflow: ellipsis; /*兼容opera*/
+      text-overflow: ellipsis; /*这就是省略号喽*/
+      overflow: hidden; /*设置超过的隐藏*/
+      white-space: nowrap; /*设置不折行*/
+      vertical-align: middle;
+      height: px2rem(22);
+      line-height: px2rem(22);
+      font-size: px2rem(16);
+      font-weight: 300;
+      color: #000000;
+
+      &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        height: px2rem(22);
+        line-height: px2rem(22);
+        font-size: px2rem(16);
+        font-weight: 300;
+        color: #999999;
+      }
+
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        height: px2rem(22);
+        line-height: px2rem(22);
+        font-size: px2rem(16);
+        font-weight: 300;
+        color: #999999;
+      }
+
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        height: px2rem(22);
+        line-height: px2rem(22);
+        font-size: px2rem(16);
+        font-weight: 300;
+        color: #999999;
+      }
+
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        height: px2rem(22);
+        line-height: px2rem(22);
+        font-size: px2rem(16);
+        font-weight: 300;
+        color: #999999;
+      }
+    }
+    // input[readonly] {
+    //   pointer-events: none;
+    // }
+    &.search-input-control {
+      border-bottom: none;
+      width: px2rem(283);
+      border-radius: px2rem(4);
+      background-color: #ebebec;
+
+      .search-input {
+        padding: px2rem(7) px2rem(28) px2rem(7) px2rem(38);
+        width: px2rem(217);
+
+        .clear-icon {
+          padding: 0 px2rem(8) 0 px2rem(24);
+          margin-left: px2rem(-84);
+        }
+      }
+    }
+  }
+
+  .phone-list {
+    margin-left: px2rem(-20);
+    background-color: #f2f2f2;
+    padding-bottom: px2rem(12);
+
+    li {
+      height: px2rem(17);
+      line-height: px2rem(17);
+      font-size: px2rem(14);
+      font-weight: 300;
+      color: #000000;
+      padding-left: px2rem(20);
+      padding-top: px2rem(12);
+    }
+  }
+}

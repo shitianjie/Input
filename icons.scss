@@ -1,0 +1,20 @@
+@import "../../sass/rem.scss";
+
+.search-icon {
+  width: px2rem(24);
+  position: absolute;
+  margin: px2rem(7) 0 auto px2rem(10);
+}
+
+.clear-icon {
+  width: px2rem(14);
+  height: px2rem(14);
+  padding: 0 px2rem(4) 0 px2rem(24);
+  margin-left: px2rem(-46);
+}
+
+.error-icon {
+  width: px2rem(20);
+	height: px2rem(20);
+  margin-left: px2rem(-20);
+}
